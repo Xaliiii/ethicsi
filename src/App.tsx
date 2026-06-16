@@ -120,95 +120,6 @@ function App() {
           </div>
         </section>
 
-        <section id="webmail" className="moduleShowcase">
-          <div className="moduleContainer showcaseGrid">
-            <div className="showcaseDecor">
-              <div className="showcaseImages">
-                <img
-                  className="fadeImage imageOne"
-                  src="/assets/accueil.png"
-                  alt="Connexion Ethic-Mail"
-                />
-                <img
-                  className="fadeImage imageTwo"
-                  src="/assets/boite.png"
-                  alt="Boîte mail Ethic-Mail"
-                />
-              </div>
-            </div>
-
-            <div className="showcaseText">
-              <span className="label">WEBMAIL SOUVERAIN</span>
-
-              <h2>Votre messagerie professionnelle, accessible partout</h2>
-
-              <p>
-                Ethic-Mail vous permet de consulter, envoyer et organiser vos
-                emails depuis une interface claire, sécurisée et hébergée en France.
-              </p>
-
-              <p>
-                Une solution pensée pour remplacer les messageries classiques
-                comme Gmail ou Outlook tout en gardant une expérience simple pour
-                vos utilisateurs.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="contacts" className="moduleShowcase moduleShowcaseAlt">
-          <div className="moduleContainer showcaseGrid reverse">
-            <div className="showcaseText">
-              <span className="label">CONTACTS PARTAGÉS</span>
-
-              <h2>Un carnet d’adresses clair et centralisé</h2>
-
-              <p>
-                Retrouvez vos contacts professionnels, groupes et équipes depuis
-                une interface simple et synchronisée avec votre environnement
-                Ethic-Mail.
-              </p>
-
-              <p>
-                Les informations importantes restent organisées, accessibles et
-                maîtrisées dans un espace souverain.
-              </p>
-            </div>
-
-            <div className="showcaseDecor">
-              <div className="showcaseImages singleImage">
-                <img src="/assets/contacts.png" alt="Contacts Ethic-Mail" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="agenda" className="moduleShowcase">
-          <div className="moduleContainer showcaseGrid">
-            <div className="showcaseDecor">
-              <div className="showcaseImages singleImage agendaImage">
-                <img src="/assets/agenda.png" alt="Agenda Ethic-Mail" />
-              </div>
-            </div>
-
-            <div className="showcaseText">
-              <span className="label">AGENDA COLLABORATIF</span>
-
-              <h2>Planifiez vos rendez-vous et réunions simplement</h2>
-
-              <p>
-                Organisez vos journées, réunions d’équipe et événements
-                professionnels grâce à un agenda partagé intégré à votre messagerie.
-              </p>
-
-              <p>
-                Vos calendriers restent accessibles depuis votre navigateur, tout
-                en conservant vos données dans un environnement sécurisé.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section id="office" className="moduleShowcase moduleShowcaseAlt">
           <div className="moduleContainer showcaseGrid">
             <div className="showcaseDecor">
@@ -292,6 +203,95 @@ function App() {
           </div>
         </section>
 
+        <section id="webmail" className="moduleShowcase moduleShowcaseAlt">
+          <div className="moduleContainer showcaseGrid">
+            <div className="showcaseDecor">
+              <div className="showcaseImages">
+                <img
+                  className="fadeImage imageOne"
+                  src="/assets/accueil.png"
+                  alt="Connexion Ethic-Mail"
+                />
+                <img
+                  className="fadeImage imageTwo"
+                  src="/assets/boite.png"
+                  alt="Boîte mail Ethic-Mail"
+                />
+              </div>
+            </div>
+
+            <div className="showcaseText">
+              <span className="label">WEBMAIL SOUVERAIN</span>
+
+              <h2>Votre messagerie professionnelle, accessible partout</h2>
+
+              <p>
+                Ethic-Mail vous permet de consulter, envoyer et organiser vos
+                emails depuis une interface claire, sécurisée et hébergée en France.
+              </p>
+
+              <p>
+                Une solution pensée pour remplacer les messageries classiques
+                comme Gmail ou Outlook tout en gardant une expérience simple pour
+                vos utilisateurs.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" className="moduleShowcase">
+          <div className="moduleContainer showcaseGrid reverse">
+            <div className="showcaseText">
+              <span className="label">CONTACTS PARTAGÉS</span>
+
+              <h2>Un carnet d’adresses clair et centralisé</h2>
+
+              <p>
+                Retrouvez vos contacts professionnels, groupes et équipes depuis
+                une interface simple et synchronisée avec votre environnement
+                Ethic-Mail.
+              </p>
+
+              <p>
+                Les informations importantes restent organisées, accessibles et
+                maîtrisées dans un espace souverain.
+              </p>
+            </div>
+
+            <div className="showcaseDecor">
+              <div className="showcaseImages singleImage">
+                <img src="/assets/contacts.png" alt="Contacts Ethic-Mail" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="agenda" className="moduleShowcase moduleShowcaseAlt">
+          <div className="moduleContainer showcaseGrid">
+            <div className="showcaseDecor">
+              <div className="showcaseImages singleImage agendaImage">
+                <img src="/assets/agenda.png" alt="Agenda Ethic-Mail" />
+              </div>
+            </div>
+
+            <div className="showcaseText">
+              <span className="label">AGENDA COLLABORATIF</span>
+
+              <h2>Planifiez vos rendez-vous et réunions simplement</h2>
+
+              <p>
+                Organisez vos journées, réunions d’équipe et événements
+                professionnels grâce à un agenda partagé intégré à votre messagerie.
+              </p>
+
+              <p>
+                Vos calendriers restent accessibles depuis votre navigateur, tout
+                en conservant vos données dans un environnement sécurisé.
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section id="tarifs" className="pricing">
           <span className="label">TARIFS</span>
 
@@ -312,6 +312,7 @@ function App() {
               <div className="chosen">LE PLUS CHOISI</div>
 
               <span>SOCLE CLOUD</span>
+
               <h3>
                 149€ <small>/ mois</small>
               </h3>

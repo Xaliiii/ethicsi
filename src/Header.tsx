@@ -9,14 +9,14 @@ export default function Header() {
             />
         </a>
 
-      <nav>
-        <a href="#webmail">Ethic-Mail</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#agenda">Agenda</a>
-        <a href="#office">Ethic-Office</a>
-        <a href="#talk"></a>
-        <a href="#tarifs">Prix</a>
-      </nav>
+        <nav>
+            <a href="#office">Ethic-Office</a>
+            <a href="#talk">Talk</a>
+            <a href="#webmail">Ethic-Mail</a>
+            <a href="#contacts">Contacts</a>
+            <a href="#agenda">Agenda</a>
+            <a href="#tarifs">Tarifs</a>
+        </nav>
 
       <a
         className="navBtn"
