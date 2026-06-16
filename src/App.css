@@ -75,18 +75,16 @@ a {
   color: white;
 }
 
-.brandIcon {
-  width: 24px;
-  height: 24px;
-  background: #1d71b8;
-  border-radius: 5px;
-  display: grid;
-  place-items: center;
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.brandIcon img {
-  width: 14px;
-  height: 14px;
+.brandLogo {
+  height: 57px;
+  width: auto;
+  display: block;
 }
 
 .nav nav {
@@ -183,7 +181,7 @@ a {
   position: absolute;
   width: 190px;
   height: 110px;
-  background: #dce6ff;
+  background: #1d71b8;
   border-radius: 12px;
   left: -18px;
   top: -18px;
@@ -961,8 +959,8 @@ footer button {
 
   background: linear-gradient(
     135deg,
-    #1d71b8,
-    #73c6ff
+    #56CCF2,
+    #EAF4FD
   );
 
   opacity: 0.12;

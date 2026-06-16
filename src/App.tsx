@@ -1,18 +1,13 @@
-import { Routes, Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-
-import EthicMail from './EthicMail'
-import EthicOffice from './EthicOffice'
+import Header from './Header'
 import './App.css'
 
 const cloudItems = [
-  'Jusqu\'à 15 utilisateurs',
+  "Jusqu'à 15 utilisateurs",
   '1 To de données par utilisateur',
   'Gestion et partage de fichiers',
   'Gestionnaire de tâches',
   'Anti-virus',
 ]
-
 
 const features = [
   {
@@ -38,22 +33,13 @@ const features = [
   },
 ]
 
-function LandingPage() {
+function App() {
   return (
     <>
-      <header className="nav">
-        <Logo />
-
-        <nav>
-          <a href="#plateforme">La plateforme</a>
-          <a href="#tarifs">Tarifs</a>
-        </nav>
-
-        <a className="navBtn" href="#contact">Demander une démo</a>
-      </header>
+      <Header />
 
       <main>
-        <section className="hero">
+        <section id="top" className="hero">
           <div className="pill">● CLOUD SOUVERAIN</div>
 
           <h1>
@@ -70,7 +56,9 @@ function LandingPage() {
             conformité totale avec le RGPD.
           </p>
 
-          <a className="primaryBtn" href="#contact">Demander une démo →</a>
+          <a className="primaryBtn" href="#contact">
+            Demander une démo →
+          </a>
         </section>
 
         <section id="plateforme" className="platform">
@@ -79,6 +67,7 @@ function LandingPage() {
               src="/assets/17db007eeabbd97ebd01098541b87d333dea9abe.jpg"
               alt="Serveurs"
             />
+
             <div className="badge">
               <strong>100 %</strong>
               <span>Souverain</span>
@@ -113,10 +102,16 @@ function LandingPage() {
                 <article className="feature" key={feature.title}>
                   <div className="featureIcon">
                     <img src={feature.icon} alt="" />
+
                     {feature.check && (
-                      <img className="lockCheck" src="/assets/Vector.svg" alt="" />
+                      <img
+                        className="lockCheck"
+                        src="/assets/Vector.svg"
+                        alt=""
+                      />
                     )}
                   </div>
+
                   <h3>{feature.title}</h3>
                   <p>{feature.text}</p>
                 </article>
@@ -125,14 +120,187 @@ function LandingPage() {
           </div>
         </section>
 
+        <section id="webmail" className="moduleShowcase">
+          <div className="moduleContainer showcaseGrid">
+            <div className="showcaseDecor">
+              <div className="showcaseImages">
+                <img
+                  className="fadeImage imageOne"
+                  src="/assets/accueil.png"
+                  alt="Connexion Ethic-Mail"
+                />
+                <img
+                  className="fadeImage imageTwo"
+                  src="/assets/boite.png"
+                  alt="Boîte mail Ethic-Mail"
+                />
+              </div>
+            </div>
+
+            <div className="showcaseText">
+              <span className="label">WEBMAIL SOUVERAIN</span>
+
+              <h2>Votre messagerie professionnelle, accessible partout</h2>
+
+              <p>
+                Ethic-Mail vous permet de consulter, envoyer et organiser vos
+                emails depuis une interface claire, sécurisée et hébergée en France.
+              </p>
+
+              <p>
+                Une solution pensée pour remplacer les messageries classiques
+                comme Gmail ou Outlook tout en gardant une expérience simple pour
+                vos utilisateurs.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contacts" className="moduleShowcase moduleShowcaseAlt">
+          <div className="moduleContainer showcaseGrid reverse">
+            <div className="showcaseText">
+              <span className="label">CONTACTS PARTAGÉS</span>
+
+              <h2>Un carnet d’adresses clair et centralisé</h2>
+
+              <p>
+                Retrouvez vos contacts professionnels, groupes et équipes depuis
+                une interface simple et synchronisée avec votre environnement
+                Ethic-Mail.
+              </p>
+
+              <p>
+                Les informations importantes restent organisées, accessibles et
+                maîtrisées dans un espace souverain.
+              </p>
+            </div>
+
+            <div className="showcaseDecor">
+              <div className="showcaseImages singleImage">
+                <img src="/assets/contacts.png" alt="Contacts Ethic-Mail" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="agenda" className="moduleShowcase">
+          <div className="moduleContainer showcaseGrid">
+            <div className="showcaseDecor">
+              <div className="showcaseImages singleImage agendaImage">
+                <img src="/assets/agenda.png" alt="Agenda Ethic-Mail" />
+              </div>
+            </div>
+
+            <div className="showcaseText">
+              <span className="label">AGENDA COLLABORATIF</span>
+
+              <h2>Planifiez vos rendez-vous et réunions simplement</h2>
+
+              <p>
+                Organisez vos journées, réunions d’équipe et événements
+                professionnels grâce à un agenda partagé intégré à votre messagerie.
+              </p>
+
+              <p>
+                Vos calendriers restent accessibles depuis votre navigateur, tout
+                en conservant vos données dans un environnement sécurisé.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="office" className="moduleShowcase moduleShowcaseAlt">
+          <div className="moduleContainer showcaseGrid">
+            <div className="showcaseDecor">
+              <div className="showcaseImages officeImages">
+                <img
+                  className="officeOne"
+                  src="/assets/word.png"
+                  alt="Document texte OnlyOffice"
+                />
+                <img
+                  className="officeTwo"
+                  src="/assets/calc.png"
+                  alt="Tableur OnlyOffice"
+                />
+                <img
+                  className="officeThree"
+                  src="/assets/powerpoint.png"
+                  alt="Présentation OnlyOffice"
+                />
+                <img
+                  className="officeFour"
+                  src="/assets/formulaire.png"
+                  alt="Formulaire OnlyOffice"
+                />
+              </div>
+            </div>
+
+            <div className="showcaseText">
+              <span className="label">SUITE BUREAUTIQUE COLLABORATIVE</span>
+
+              <h2>Créez et partagez vos documents en toute souveraineté</h2>
+
+              <p>
+                Ethic-Office intègre OnlyOffice pour créer et modifier vos
+                documents, tableurs, présentations et formulaires directement
+                depuis votre navigateur.
+              </p>
+
+              <p>
+                Travaillez seul ou à plusieurs en temps réel, sans dépendre de
+                solutions externes, tout en conservant la maîtrise complète de vos
+                données. Cette solution permet le remplacement de Microsoft Office.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="talk" className="moduleShowcase">
+          <div className="moduleContainer showcaseGrid reverse">
+            <div className="showcaseText">
+              <span className="label">COMMUNICATION UNIFIÉE</span>
+
+              <h2>Messagerie instantanée et visioconférence intégrées</h2>
+
+              <p>
+                Échangez simplement avec vos équipes grâce à un espace de
+                discussion sécurisé intégré à la plateforme.
+              </p>
+
+              <p>
+                Lancez des réunions audio ou vidéo, partagez votre écran et
+                collaborez efficacement sans passer par des services tiers. Cette
+                solution est idéale pour le remplacement de Microsoft Teams.
+              </p>
+            </div>
+
+            <div className="showcaseDecor">
+              <div className="showcaseImages talkImages">
+                <img
+                  className="talkOne"
+                  src="/assets/talk.png"
+                  alt="Discussion NextCloud Talk"
+                />
+                <img
+                  className="talkTwo"
+                  src="/assets/visio.png"
+                  alt="Visioconférence NextCloud Talk"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="tarifs" className="pricing">
           <span className="label">TARIFS</span>
+
           <h2>Des tarifs maîtrisés</h2>
 
           <p className="pricingIntro">
             La souveraineté numérique accessible aux PME. Une offre clé en main
-            incluant cloud privé, logiciels collaboratifs et environnement de travail
-            complet, dès 149€ HT/mois pour 15 utilisateurs.
+            incluant cloud privé, logiciels collaboratifs et environnement de
+            travail complet, dès 149€ HT/mois pour 15 utilisateurs.
           </p>
 
           <div className="tabs">
@@ -144,7 +312,10 @@ function LandingPage() {
               <div className="chosen">LE PLUS CHOISI</div>
 
               <span>SOCLE CLOUD</span>
-              <h3>149€ <small>/ mois</small></h3>
+              <h3>
+                149€ <small>/ mois</small>
+              </h3>
+
               <p>Maximum 15 utilisateurs</p>
               <p>Pour les organisations exigeantes</p>
 
@@ -163,7 +334,10 @@ function LandingPage() {
             </article>
 
             <div className="sidePlans">
-              <Plan title="MODULE ETHIC-MAIL" items={['Webmail', 'Contacts', 'Agenda', 'Anti-spam']} />
+              <Plan
+                title="MODULE ETHIC-MAIL"
+                items={['Webmail', 'Contacts', 'Agenda', 'Anti-spam']}
+              />
 
               <Plan
                 title="MODULE ETHIC-OFFICE"
@@ -193,14 +367,8 @@ function LandingPage() {
 
           <div>
             <h4>LA PLATEFORME</h4>
-
-            <a href="#plateforme">
-              Fonctionnalités
-            </a>
-
-            <a href="#tarifs">
-              Tarifs
-            </a>
+            <a href="#plateforme">Fonctionnalités</a>
+            <a href="#tarifs">Tarifs</a>
           </div>
 
           <div>
@@ -224,10 +392,7 @@ function LandingPage() {
 
             <button
               onClick={() =>
-                window.open(
-                  'https://www.exelys.net/contact/',
-                  '_blank'
-                )
+                window.open('https://www.exelys.net/contact/', '_blank')
               }
             >
               Nous contacter →
@@ -237,16 +402,19 @@ function LandingPage() {
 
         <div className="footerBottom">
           <a
-              href="https://www.exelys.net/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src="/assets/07cd2090a6beeedcf6683255b1573fbffd68a1f7.png"
-                alt="Exelys"
-              />
-            </a>
-          <span>Une solution EXELYS - Digital Partner — Siège social : Pau, France</span>
+            href="https://www.exelys.net/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/assets/07cd2090a6beeedcf6683255b1573fbffd68a1f7.png"
+              alt="Exelys"
+            />
+          </a>
+
+          <span>
+            Une solution EXELYS - Digital Partner — Siège social : Pau, France
+          </span>
         </div>
       </footer>
     </>
@@ -256,9 +424,6 @@ function LandingPage() {
 function Logo({ light = false }: { light?: boolean }) {
   return (
     <div className={`brand ${light ? 'light' : ''}`}>
-      <span className="brandIcon">
-        <img src="/assets/Icon.svg" alt="" />
-      </span>
       <strong>EthicSI</strong>
     </div>
   )
@@ -268,7 +433,10 @@ function Plan({ title, items }: { title: string; items: string[] }) {
   return (
     <article className="plan">
       <span>{title}</span>
-      <h3>49€ <small>/ mois</small></h3>
+
+      <h3>
+        49€ <small>/ mois</small>
+      </h3>
 
       <div className="planItems">
         {items.map((item) => (
@@ -279,39 +447,15 @@ function Plan({ title, items }: { title: string; items: string[] }) {
         ))}
       </div>
 
-      <div className="planActions">
-        <Link
-          className="moreBtn"
-          to={
-            title.includes('MAIL')
-              ? '/ethic-mail'
-              : '/ethic-office'
-          }
-        >
-          En savoir plus
-        </Link>
-
-        <button
-              onClick={() =>
-                window.open(
-                  'https://www.exelys.net/contact/',
-                  '_blank'
-                )
-              }
-            >
-              Nous contacter →
-            </button>
-      </div>
+      <button
+        onClick={() =>
+          window.open('https://www.exelys.net/contact/', '_blank')
+        }
+      >
+        Nous contacter →
+      </button>
     </article>
   )
 }
 
-export default function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/ethic-mail" element={<EthicMail />} />
-      <Route path="/ethic-office" element={<EthicOffice />} />
-    </Routes>
-  )
-}
+export default App
