@@ -153,7 +153,7 @@ function App() {
               <h2>Créez et partagez vos documents en toute souveraineté</h2>
 
               <p>
-                Ethic-Office intègre OnlyOffice pour créer et modifier vos
+                Ethic-Office est conçu pour créer et modifier vos
                 documents, tableurs, présentations et formulaires directement
                 depuis votre navigateur.
               </p>
@@ -343,10 +343,9 @@ function App() {
               <Plan
                 title="MODULE ETHIC-OFFICE"
                 items={[
-                  'NextCloud Talk',
+                  'Ethic-Talk',
                   'Messagerie instantanée',
-                  'Visioconférence',
-                  'OnlyOffice collaboratif',
+                  'Edition de document collaborative',
                 ]}
               />
             </div>

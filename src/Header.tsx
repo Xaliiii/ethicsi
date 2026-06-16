@@ -11,7 +11,7 @@ export default function Header() {
 
         <nav>
             <a href="#office">Ethic-Office</a>
-            <a href="#talk">Talk</a>
+            <a href="#talk">Ethic-Talk</a>
             <a href="#webmail">Ethic-Mail</a>
             <a href="#contacts">Contacts</a>
             <a href="#agenda">Agenda</a>
