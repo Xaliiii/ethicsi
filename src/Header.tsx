@@ -10,9 +10,9 @@ export default function Header() {
         </a>
 
         <nav>
-            <a href="#office">Ethic-Office</a>
-            <a href="#talk">Ethic-Talk</a>
-            <a href="#webmail">Ethic-Mail</a>
+            <a href="#office">EthicSI-Office</a>
+            <a href="#talk">EthicSI-Talk</a>
+            <a href="#webmail">EthicSI-Mail</a>
             <a href="#contacts">Contacts</a>
             <a href="#agenda">Agenda</a>
             <a href="#tarifs">Tarifs</a>

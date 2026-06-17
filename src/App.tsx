@@ -6,6 +6,7 @@ const cloudItems = [
   '1 To de données par utilisateur',
   'Gestion et partage de fichiers',
   'Gestionnaire de tâches',
+  'Suivi d\'activitès',
   'Anti-virus',
 ]
 
@@ -56,7 +57,12 @@ function App() {
             conformité totale avec le RGPD.
           </p>
 
-          <a className="primaryBtn" href="#contact">
+          <a
+            className="primaryBtn"
+            href="https://www.exelys.net/contact/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Demander une démo →
           </a>
         </section>
@@ -92,7 +98,7 @@ function App() {
             </p>
 
             <p>
-              Basée sur des technologies Open Source et hébergée en Europe, elle
+              Basée sur des technologies Open Source et hébergée en France, elle
               garantit transparence, conformité RGPD et contrôle de nos informations,
               tout en conservant une expérience utilisateur familière.
             </p>
@@ -153,7 +159,7 @@ function App() {
               <h2>Créez et partagez vos documents en toute souveraineté</h2>
 
               <p>
-                Ethic-Office est conçu pour créer et modifier vos
+                EthicSI Office est conçu pour créer et modifier vos
                 documents, tableurs, présentations et formulaires directement
                 depuis votre navigateur.
               </p>
@@ -226,7 +232,7 @@ function App() {
               <h2>Votre messagerie professionnelle, accessible partout</h2>
 
               <p>
-                Ethic-Mail vous permet de consulter, envoyer et organiser vos
+                EthicSI Mail vous permet de consulter, envoyer et organiser vos
                 emails depuis une interface claire, sécurisée et hébergée en France.
               </p>
 
@@ -244,12 +250,12 @@ function App() {
             <div className="showcaseText">
               <span className="label">CONTACTS PARTAGÉS</span>
 
-              <h2>Un carnet d’adresses clair et centralisé</h2>
+              <h2>Un carnet d’adresses sécurisé et centralisé</h2>
 
               <p>
                 Retrouvez vos contacts professionnels, groupes et équipes depuis
                 une interface simple et synchronisée avec votre environnement
-                Ethic-Mail.
+                EthicSI Mail.
               </p>
 
               <p>
@@ -303,22 +309,14 @@ function App() {
             travail complet, dès 149€ HT/mois pour 15 utilisateurs.
           </p>
 
-          <div className="tabs">
-            <button>Mensuel</button>
-          </div>
-
           <div className="plans">
             <article className="mainPlan">
-              <div className="chosen">LE PLUS CHOISI</div>
 
-              <span>SOCLE CLOUD</span>
+              <span>ETHICSI CORE</span>
 
               <h3>
                 149€ <small>/ mois</small>
               </h3>
-
-              <p>Maximum 15 utilisateurs</p>
-              <p>Pour les organisations exigeantes</p>
 
               <hr />
 
@@ -331,7 +329,13 @@ function App() {
                 ))}
               </ul>
 
-              <button>Commander ce plan</button>
+            <button
+              onClick={() =>
+                window.open('https://www.exelys.net/contact/', '_blank')
+              }
+              >
+               Nous contacter
+            </button>
             </article>
 
             <div className="sidePlans">
@@ -352,8 +356,7 @@ function App() {
           </div>
 
           <small className="note">
-            * Tarifs à partir de 10€ par mois et par utilisateurs, pour un minimum
-            de 15 utilisateurs, soit 149€/mois pour la structure.
+            * 149€ HT/mois pour EthicSI core pour 15 utilisateurs maximum soit moins de 10€ /mois/utilisateurs
           </small>
         </section>
       </main>
