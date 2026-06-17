@@ -159,7 +159,7 @@ function App() {
               <h2>Créez et partagez vos documents en toute souveraineté</h2>
 
               <p>
-                EthicSI Office est conçu pour créer et modifier vos
+                EthicSI Office est conçu pour vous permettre créer et modifier vos
                 documents, tableurs, présentations et formulaires directement
                 depuis votre navigateur.
               </p>
@@ -340,12 +340,12 @@ function App() {
 
             <div className="sidePlans">
               <Plan
-                title="MODULE ETHIC-MAIL"
+                title="MODULE ETHICSI MAIL"
                 items={['Webmail', 'Contacts', 'Agenda', 'Anti-spam']}
               />
 
               <Plan
-                title="MODULE ETHIC-OFFICE"
+                title="MODULE ETHICSI OFFICE"
                 items={[
                   'Ethic-Talk',
                   'Messagerie instantanée',
